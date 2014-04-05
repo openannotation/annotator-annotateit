@@ -1,5 +1,5 @@
 Annotator = require('annotator')
-Permissions = require('./permissions')
+Permissions = Annotator.Plugin.fetch('Permissions')
 $ = Annotator.Util.$
 
 
