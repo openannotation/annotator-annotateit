@@ -19,5 +19,11 @@
   "bugs": {
     "url": "https://github.com/openannotation/annotator-annotateit/issues"
   },
-  "homepage": "https://github.com/openannotation/annotator-annotateit"
+  "homepage": "https://github.com/openannotation/annotator-annotateit",
+  "devDependencies": {
+    "coffee-script": "^1.7.1",
+    "annotator": "^2.0.0-dev.1",
+    "coffeeify": "^0.6.0",
+    "browserify": "^3.38.0"
+  }
 }
