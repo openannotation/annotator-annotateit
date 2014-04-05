@@ -1,15 +1,15 @@
-all: index.js
+all: annotator-annotateitpermissions.min.js
 
 clean:
-	rm index.js
+	rm *.js *.js.map
 
-index.js: src/annotateitpermissions.coffee
-	./node_modules/.bin/browserify \
-		src/annotateitpermissions.coffee \
-		-p annotator \
-		-t coffeeify \
-		--extension=.coffee \
+annotator-annotateitpermissions.js: src/annotateitpermissions.coffee
+	./node_modules/.bin/browserify src/annotateitpermissions.coffee \
+		-d -p annotator -t coffeeify --extension=.coffee \
 		--standalone Annotator.Plugin.AnnotateItPermissions \
-		> index.js
+		> $@
+
+annotator-annotateitpermissions.min.js: annotator-annotateitpermissions.js
+	uglifyjs $< --source-map $@.map -o $@
 
 .PHONY: clean

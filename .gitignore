@@ -1,2 +1,3 @@
-index.js
+*.js
+*.js.map
 node_modules
