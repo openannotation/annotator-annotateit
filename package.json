@@ -25,7 +25,7 @@
     "annotator": "^2.0.0-dev.1",
     "coffeeify": "^0.6.0",
     "browserify": "^3.38.0",
-    "uglifyjs": "^2.3.6"
+    "uglify-js": "^2.3.6"
   },
   "browser": "./annotator-annotateitpermissions.js"
 }

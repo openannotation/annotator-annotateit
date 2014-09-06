@@ -10,6 +10,6 @@ annotator-annotateitpermissions.js: src/annotateitpermissions.coffee
 		> $@
 
 annotator-annotateitpermissions.min.js: annotator-annotateitpermissions.js
-	uglifyjs $< --source-map $@.map -o $@
+	./node_modules/.bin/uglifyjs $< --source-map $@.map -o $@
 
 .PHONY: clean
